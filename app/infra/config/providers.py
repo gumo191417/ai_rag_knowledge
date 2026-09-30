@@ -19,11 +19,11 @@ class InfraConfig:
     embedding_config:EmbeddingConfig =field(default_factory=lambda : embedding_config)
     llm_config: LLMConfig = field(default_factory=lambda: lm_config)
     mcp_config: McpConfig = field(default_factory=lambda: mcp_config)
-    milvus_config: MilvusConfig = field(default_factory=milvus_config)
-    mineru_config: MinerUConfig = field(default_factory=mineru_config)
-    minio_config: MinIOConfig = field(default_factory=minio_config)
-    reranker_config: RerankerConfig = field(default_factory=reranker_config)
-    settings: AppSettings = field(default_factory=settings)
+    milvus_config: MilvusConfig = field(default_factory=lambda : milvus_config)
+    mineru_config: MinerUConfig = field(default_factory=lambda : mineru_config)
+    minio_config: MinIOConfig = field(default_factory=lambda : minio_config)
+    reranker_config: RerankerConfig = field(default_factory=lambda : reranker_config)
+    settings: AppSettings = field(default_factory=lambda : settings)
 
 
 infra_config = InfraConfig()

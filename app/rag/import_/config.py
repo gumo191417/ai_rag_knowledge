@@ -1,0 +1,8 @@
+# MinerU 模型版本配置（vlm = 视觉语言模型，适合PDF/图片高精度解析）
+MINERU_MODEL_VERSION = "vlm"
+# 轮询最大间隔时间
+MINERU_POLL_TIMEOUT_SECONDS = 600
+# 任务轮询间隔时间（秒）
+MINERU_POLL_INTERVAL_SECONDS = 3
+#MINERU最大下载时间（秒）
+MINERU_DOWNLOAD_TIMEOUT_SECONDS = 600
